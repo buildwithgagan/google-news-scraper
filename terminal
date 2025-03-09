@@ -1,0 +1,24 @@
+mkdir google-news-scraper
+cd google-news-scraper
+npm init -y
+npm install express puppeteer node-cache dotenv cors helmet
+rm -rf node_modules package-lock.json
+npm install
+npm start
+
+# Initialize and configure git (if not already done)
+git init
+git config --global user.name "buildwithgagan"
+git config --global user.email "gaganmj23@gmail.com"
+
+# Check status and add files
+git status
+git add .
+
+# Create commit
+git commit -m "Initial commit: Google News Scraper API with Puppeteer"
+
+# Set up remote and push
+git remote add origin https://github.com/buildwithgagan/google-news-scraper.git
+git branch -M main
+git push origin main 
